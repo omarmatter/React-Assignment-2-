@@ -1,25 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import Change from './components/Change';
+import Random from './components/Random';
+import React, { useState } from 'react';
+import { Row } from 'react-bootstrap';
+import Hellow from './components/Hellow';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//   const [text, setText] = useState('Hello World')
+        
+//   const changeText = () => 
+//       text === 'Hello World' ? setText('Hello Palestine') : setText('Hello World')
+  
+
+// return (
+//   <div className="container mt-5">
+//       <p className="success"  onClick={changeText}>
+         
+//           {text}
+//       </p>
+//       <hr />
+//       <Change/>
+//       <hr />
+//       <Random />
+//   </div>
+// )
+
+
+return (
+  <div className=" mt-5">
+    <Row>
+  <Hellow/>
+ <Change/>
+ <Random/>
+ </Row>
+ </div>
+);
+
 }
+
 
 export default App;
